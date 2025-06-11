@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kindle Modding Tools & Resources</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body { background: #16181d; color: #eaeaea; font-family: 'Inter', Arial, sans-serif; margin: 0; padding: 0; min-height: 100vh; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 32px 16px 48px; }
+    h1 { text-align: center; color: #67dfff; font-size: 2.5em; font-weight: 700; margin-bottom: 18px; letter-spacing: .02em; text-shadow: 0 2px 24px #081921; }
+    .summary { max-width: 800px; margin: 0 auto 34px; color: #d5f1ff; font-size: 1.12em; background: #222936c0; border-radius: 12px; padding: 16px 18px; box-shadow: 0 3px 22px #01192117; line-height: 1.7; }
+    .summary a { color: #79e5ff; border-bottom: 1.5px dotted #85b8ff; font-weight: 600; }
+    .summary a:hover { color: #ffe082; border-color: #ffe082; }
+    .section-title { margin: 38px 0 18px; font-size: 1.36em; color: #ffe082; text-shadow: 0 2px 12px #222; font-weight: 600; letter-spacing: .01em; }
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px,1fr)); gap: 28px; }
+    .card { background: linear-gradient(120deg, #1a1d23 90%, #1b2837 100%); border-radius: 18px; box-shadow: 0 4px 32px #0e141b65; padding: 24px; display: flex; flex-direction: column; transition: transform .16s cubic-bezier(.4,2,.3,1); border: 1.5px solid #20242b; position: relative; }
+    .card:hover { transform: translateY(-6px) scale(1.012); box-shadow: 0 6px 36px #1273c851, 0 0 0 1.5px #313d4f; border-color: #213852; }
+    .card-title { font-size:1.18em; font-weight:600; color:#65c7ff; margin-bottom:6px; }
+    .card-desc { font-size:1em; color:#e0e0e0; margin-bottom:10px; line-height:1.65; }
+    .card-links { display:flex; flex-direction:column; gap:4px; margin-bottom:6px; }
+    a { color:#72b6ff; word-break:break-all; text-decoration:none; border-bottom:1px dotted #2b4f66; transition: color .14s, border-color .15s; font-weight:500; }
+    a:hover { color:#ffef6d; border-color:#ffef6d; text-decoration:underline; }
+    .zip-link { color:#b2ff59; font-weight:600; letter-spacing:.02em; border-bottom:1.5px dotted #689f38; }
+    .zip-link:hover { color:#ffe082; border-color:#ffe082; }
+    .beta { color:#ffd180; font-size:0.95em; font-style:italic; }
+    @media (max-width:700px) { .card { padding:16px 10px; } h1 { font-size:1.5em; } .section-title { font-size:1.08em; } .cards-grid { gap:15px; } .summary { font-size:.98em; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Kindle Modding Tools & Resources</h1>
+    <div class="summary">
+      <strong>The most essential jailbroken Kindle tools and plugins. Everything here requires a jailbroken Kindle unless stated otherwise.<br>
+      <br>
+      <b>Start here:</b>
+      <ul>
+        <li><b>Kindle Modding Wiki:</b> <a href="https://kindlemodding.org/">kindlemodding.org</a></li>
+        <li><b>Jailbreak required:</b> Use the <a href="https://kindlemodding.org/jailbreaking/WinterBreak/">WinterBreak</a> guide.</li>
+      </ul>
+    </div>
+
+    <!-- ESSENTIAL TOOLS -->
+    <div class="section-title">Most Popular & Essential Tools</div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-title">KOReader</div>
+        <div class="card-desc">
+          Powerful open-source document reader for Kindle supporting EPUB, PDF, DjVu, CBZ/CBR, and more. Adds features like custom screensavers, USB/network transfer, Bluetooth audio, plugins, dictionary, theming, and advanced file management.
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/koreader/koreader/releases" target="_blank">Download KOReader (GitHub)</a>
+          <a href="https://koreader.rocks/" target="_blank">Official KOReader Website</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">KindleFetch</div>
+        <div class="card-desc">
+          Command-line tool to download books from Anna’s Archive directly to your Kindle using the built-in terminal. <b>Requires KTerm terminal.</b>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/justrals/KindleFetch" target="_blank">KindleFetch (GitHub)</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">kterm (Kindle Terminal Emulator)</div>
+        <div class="card-desc">
+          Terminal emulator for Kindle. Access a command-line interface for running scripts, mods, and tools directly on your device.
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/bfabiszewski/kterm" target="_blank">kterm (GitHub)</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- KOReader PLUGINS -->
+    <div class="section-title">KOReader Plugins</div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-title">Z‑Library Plugin for KOReader</div>
+        <div class="card-desc">
+          Search and download eBooks from Z‑Library directly in KOReader.
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/OctoNezd/zlibrary.koplugin" target="_blank">Z‑Library Plugin (GitHub)</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Send Highlights & Screenshots via Telegram (KOReader)</div>
+        <div class="card-desc">
+          Send your Kindle highlights and screenshots instantly to your Telegram chat using this plugin and bot.
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/0xmiki/telegramhighlights.koplugin" target="_blank">Plugin (GitHub)</a>
+          <a href="https://t.me/bookshotsbot" target="_blank">Telegram Bot: @bookshotsbot</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">KAnki (KOReader Flashcard Plugin)</div>
+        <div class="card-desc">
+          Use Anki-style spaced repetition flashcards right on your Kindle.
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/crizmo/KAnki" target="_blank">KAnki (GitHub)</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Crossword Puzzle Plugin</div>
+        <div class="card-desc">
+          Play crossword puzzles directly on your Kindle via KOReader.
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/roygbyte/crossword.koplugin" target="_blank">Crossword Plugin (GitHub)</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Weather Plugin</div>
+        <div class="card-desc">
+          Get real-time weather updates on your KOReader home screen.
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/roygbyte/weather.koplugin" target="_blank">Weather Plugin (GitHub)</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Clock Plugin (dtDisplay)</div>
+        <div class="card-desc">
+          Display time and date in a fullscreen widget inside KOReader.
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/kktse/dtdisplay.koplugin" target="_blank">dtDisplay (GitHub)</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- GAMES -->
+    <div class="section-title">Games</div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-title">Tetris for kterm (HF only)</div>
+        <div class="card-desc">
+          Classic Tetris game playable in the Kindle's terminal on hackable firmware models. <b>Requires KTerm terminal.</b>
+        </div>
+        <div class="card-links">
+          <a class="zip-link" href="downloads/kindletetris.zip" download>Download kindletetris.zip</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Gnome Games (Chess, Mines)</div>
+        <div class="card-desc">
+          Play classic Gnome Chess and Minesweeper games on your Kindle.
+        </div>
+        <div class="card-links">
+          <a class="zip-link" href="downloads/gnomegames.zip" download>Download gnomegames.zip</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Nine Men's Morris (HF)</div>
+        <div class="card-desc">
+          Classic Nine Men's Morris board game for Kindle HF devices. <b>Requires KTerm terminal.</b>
+        </div>
+        <div class="card-links">
+          <a class="zip-link" href="downloads/morris-kindle.zip" download>Download morris-kindle.zip</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MEDIA/BLUETOOTH -->
+    <div class="section-title">Media & Audio</div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-title">SOX Media Player (HF, Beta)</div>
+        <div class="card-desc">
+          Play WAV audio files over Bluetooth using SOX player. <span class="beta">Still in beta — not all features are stable, improvements ongoing.</span>
+        </div>
+        <div class="card-links">
+          <a class="zip-link" href="downloads/soxhf.zip" download>Download soxhf.zip</a>
+          <a href="https://www.mobileread.com/forums/showthread.php?t=336390&highlight=sox&page=3" target="_blank">Discussion (MobileRead)</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- GAME BOY EMULATORS -->
+    <div class="section-title">Game Boy Emulators</div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-title">Gambatte-K2 Emulator (Newer Kindles, Beta)</div>
+        <div class="card-desc">
+          Game Boy emulator for recent Kindle models. <span class="beta">Beta: Saving/loading games does not work yet.</span>
+        </div>
+        <div class="card-links">
+          <a class="zip-link" href="downloads/gambatte-k2.zip" download>Download gambatte-k2.zip</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Game Boy Emulator (Older Kindles)</div>
+        <div class="card-desc">
+          Game Boy emulator support for older Kindles. See the MobileRead thread for info and download.
+        </div>
+        <div class="card-links">
+          <a href="https://www.mobileread.com/forums/showthread.php?t=284364" target="_blank">MobileRead Thread</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- OTHER USEFUL TOOLS -->
+    <div class="section-title">Other Useful Tools</div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-title">KindleKraft (Minecraft Server)</div>
+        <div class="card-desc">
+          Turns your Kindle into a Minecraft LAN multiplayer server.
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/polish-penguin-dev/KindleKraft" target="_blank">KindleKraft (GitHub)</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Disable Ads %</div>
+        <div class="card-desc">
+          Removes ads and enables custom KOReader screensavers on ad-supported Kindles. <b>Required to use custom screensavers with KOReader if your Kindle has ads.</b>
+        </div>
+        <div class="card-links">
+          <a class="zip-link" href="downloads/disable_ads.sh" download>Download disable_ads.sh</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Shortcut Browser</div>
+        <div class="card-desc">
+          Browse any website fullscreen on your Kindle using this simple web browser.
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/mitchellurgero/kindle-shortcut-browser/releases" target="_blank">Shortcut Browser (GitHub)</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEVELOPMENT -->
+    <div class="section-title">Development</div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-title">kindle-usbnetlite (SSH via USB)</div>
+        <div class="card-desc">
+          Lightweight USB networking utility for Kindle. Lets you SSH into your Kindle from your computer over USB for modding and troubleshooting.
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/notmarek/kindle-usbnetlite/" target="_blank">kindle-usbnetlite (GitHub)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
